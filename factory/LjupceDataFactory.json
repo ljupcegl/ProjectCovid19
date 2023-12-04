@@ -1,0 +1,9 @@
+{
+	"name": "LjupceDataFactory",
+	"location": "westeurope",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "6d67638a-277f-4b1f-8963-64a13573ce79",
+		"tenantId": "473fcff6-9dec-4c4c-b996-515f71221c80"
+	}
+}
