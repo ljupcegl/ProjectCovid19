@@ -1,5 +1,5 @@
 {
-	"name": "AzureSqlOrders",
+	"name": "AzureSqlUsers",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureLjupceSQL",
@@ -9,30 +9,22 @@
 		"type": "AzureSqlTable",
 		"schema": [
 			{
-				"name": "OrderID",
-				"type": "int",
-				"precision": 10
-			},
-			{
 				"name": "UserID",
 				"type": "int",
 				"precision": 10
 			},
 			{
-				"name": "OrderDate",
-				"type": "datetime",
-				"precision": 23,
-				"scale": 3
+				"name": "Username",
+				"type": "varchar"
 			},
 			{
-				"name": "ProductID",
-				"type": "int",
-				"precision": 10
+				"name": "Email",
+				"type": "varchar"
 			}
 		],
 		"typeProperties": {
 			"schema": "dbo",
-			"table": "Orders"
+			"table": "Users"
 		}
 	}
 }
