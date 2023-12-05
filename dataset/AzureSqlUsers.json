@@ -7,21 +7,7 @@
 		},
 		"annotations": [],
 		"type": "AzureSqlTable",
-		"schema": [
-			{
-				"name": "UserID",
-				"type": "int",
-				"precision": 10
-			},
-			{
-				"name": "Username",
-				"type": "varchar"
-			},
-			{
-				"name": "Email",
-				"type": "varchar"
-			}
-		],
+		"schema": [],
 		"typeProperties": {
 			"schema": "dbo",
 			"table": "Users"
