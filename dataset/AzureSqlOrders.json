@@ -1,5 +1,5 @@
 {
-	"name": "AzureSqlTable1",
+	"name": "AzureSqlOrders",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureLjupceSQL",
@@ -7,6 +7,10 @@
 		},
 		"annotations": [],
 		"type": "AzureSqlTable",
-		"schema": []
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Orders"
+		}
 	}
 }
