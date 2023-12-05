@@ -1,0 +1,38 @@
+{
+	"name": "OrdersSource",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ljupce_data_lake",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "Sheet1",
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "Orders.xlsx",
+				"fileSystem": "qinshift"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": [
+			{
+				"name": "OrderID",
+				"type": "String"
+			},
+			{
+				"name": "UserID",
+				"type": "String"
+			},
+			{
+				"name": "OrderDate",
+				"type": "String"
+			},
+			{
+				"name": "ProductID",
+				"type": "String"
+			}
+		]
+	}
+}

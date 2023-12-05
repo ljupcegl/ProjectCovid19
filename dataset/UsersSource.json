@@ -1,0 +1,34 @@
+{
+	"name": "UsersSource",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ljupce_data_lake",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "Sheet1",
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "User.xlsx",
+				"fileSystem": "qinshift"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": [
+			{
+				"name": "UserID",
+				"type": "String"
+			},
+			{
+				"name": "Username",
+				"type": "String"
+			},
+			{
+				"name": "Email",
+				"type": "String"
+			}
+		]
+	}
+}

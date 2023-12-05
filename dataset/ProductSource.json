@@ -1,0 +1,38 @@
+{
+	"name": "ProductSource",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ljupce_data_lake",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "Sheet1",
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "Product.xlsx",
+				"fileSystem": "qinshift"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": [
+			{
+				"name": "ProductID",
+				"type": "String"
+			},
+			{
+				"name": "ProductName",
+				"type": "String"
+			},
+			{
+				"name": "ProductCategory",
+				"type": "String"
+			},
+			{
+				"name": "Price",
+				"type": "String"
+			}
+		]
+	}
+}
