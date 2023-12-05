@@ -1,0 +1,16 @@
+{
+	"name": "DestinationDataset_qoo",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureLjupceSQL",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "AzureBlobFSFile"
+		}
+	}
+}
