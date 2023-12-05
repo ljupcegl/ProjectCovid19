@@ -1,0 +1,6 @@
+{
+	"name": "integrationRuntimeLjupce",
+	"properties": {
+		"type": "SelfHosted"
+	}
+}
